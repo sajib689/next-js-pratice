@@ -1,6 +1,14 @@
 import { getData } from "@/app/Hooks/PostsData";
 
-
+export const generateMetadata =async ({params}) => {
+    const data =await getData()
+    const posts =await data?.find(post => post.id === parseFloat(params.id));
+   
+    return {
+        title: `${posts.title}`,
+        description: posts.body
+    }
+}
 const page =async ({params}) => {
   
     const data =await getData()
@@ -13,6 +21,7 @@ const page =async ({params}) => {
                 posts.title
             }
             </h1>
+            <p>{posts.body}</p>
         </div>
     );
 };

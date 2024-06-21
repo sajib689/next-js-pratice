@@ -2,6 +2,12 @@
 import { searchFoods } from "@/app/Hooks/searchFood";
 import { useEffect, useState } from "react";
 
+
+export const metadata = {
+  title: 'Food',
+  description: 'Food Page'
+}
+
 const Foods =  () => {
    
     const [search,setSearch] = useState('')
