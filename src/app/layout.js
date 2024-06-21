@@ -5,8 +5,11 @@ import Navbar from "./Components/Navbar/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  default: "Next JS",
-  template: "%s |Next JS"
+  title: {
+     default: "Next JS",
+     template: "%s |Next JS"
+  },
+  description: 'Super powerful next JS'
 };
 
 export default function RootLayout({ children }) {
