@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   default: "Next JS",
-  template: "%s | Next JS"
+  template: "%s |Next JS"
 };
 
 export default function RootLayout({ children }) {

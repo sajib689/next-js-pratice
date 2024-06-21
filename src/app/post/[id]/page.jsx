@@ -6,7 +6,8 @@ export const generateMetadata =async ({params}) => {
    
     return {
         title: `${posts.title}`,
-        description: posts.body
+        description: posts.body,
+        keywords: posts.body.split(' ')
     }
 }
 const page =async ({params}) => {
